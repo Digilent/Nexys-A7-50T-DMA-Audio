@@ -4,9 +4,9 @@ module fifo2audpwm #(
     parameter FIFO_DATA_WIDTH = 32
 ) (
     input wire clk,
-    (* X_INTERFACE_INFO = "digilentinc.com:IP:pwm_audio:1.1 PWM_AUDIO pwm" *)
+    (* X_INTERFACE_INFO = "digilentinc.com:local_if:pwm_audio_rtl:1.0 PWM_AUDIO pwm" *)
     output wire aud_pwm,
-    (* X_INTERFACE_INFO = "digilentinc.com:IP:pwm_audio:1.1 PWM_AUDIO en" *)
+    (* X_INTERFACE_INFO = "digilentinc.com:local_if:pwm_audio_rtl:1.0 PWM_AUDIO en" *)
     output reg aud_en,
     
     (* X_INTERFACE_INFO = "xilinx.com:interface:fifo_read:1.0 M_FIFO_READ RD_DATA" *)
@@ -35,5 +35,5 @@ module fifo2audpwm #(
         end else
             count <= count + 1;
     assign aud_pwm = count[DATA_WIDTH-1:0] <= duty[count[DATA_WIDTH+1:DATA_WIDTH]];
-    assign aud_gain = 0;
+    //assign aud_gain = 0;
 endmodule

@@ -463,7 +463,7 @@ proc create_root_design { parentCell } {
 
 
   # Create interface ports
-  set PWM_AUDIO_0 [ create_bd_intf_port -mode Master -vlnv digilentinc.com:IP:pwm_audio_rtl:1.1 PWM_AUDIO_0 ]
+  set PWM_AUDIO_0 [ create_bd_intf_port -mode Master -vlnv digilentinc.com:local_if:pwm_audio_rtl:1.0 PWM_AUDIO_0 ]
   set ddr2_sdram [ create_bd_intf_port -mode Master -vlnv xilinx.com:interface:ddrx_rtl:1.0 ddr2_sdram ]
   set dip_switches_16bits [ create_bd_intf_port -mode Master -vlnv xilinx.com:interface:gpio_rtl:1.0 dip_switches_16bits ]
   set led_16bits [ create_bd_intf_port -mode Master -vlnv xilinx.com:interface:gpio_rtl:1.0 led_16bits ]
