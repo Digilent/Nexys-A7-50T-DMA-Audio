@@ -17,7 +17,7 @@ Files found at [audiocheck.net](https://www.audiocheck.net/testtones_highdefinit
 Requirements
 ------------
 * **Nexys A7-50T**: To purchase a Nexys A7-50T, see the [Digilent Store](https://store.digilentinc.com/nexys-a7-fpga-trainer-board-recommended-for-ece-curriculum/).
-* **Vivado 2018.2 Installation with Xilinx SDK**: To set up Vivado, see the [Installing Vivado and Digilent Board Files Tutorial](https://reference.digilentinc.com/vivado/installing-vivado/start).
+* **Vivado 2020.1 Installation with Xilinx SDK**: To set up Vivado, see the [Installing Vivado and Digilent Board Files Tutorial](https://reference.digilentinc.com/vivado/installing-vivado/start).
 * **Serial Terminal Emulator**: 
 * **MicroUSB Cable**
 * **Audio cables, headphones, and/or speakers**
@@ -27,7 +27,7 @@ Demo Setup
 
 1. Download the most recent release ZIP archive ("Nexys-A7-50T-DMA-Audio-2018.2-*.zip") from the repo's [releases page](https://github.com/Digilent/Nexys-A7-50T-DMA-Audio/releases).
 2. Extract the downloaded ZIP.
-3. Open the XPR project file, found at \<archive extracted location\>/vivado_proj/Nexys-A7-50T-DMA-Audio.xpr, included in the extracted release archive in Vivado 2018.2.
+3. Open the XPR project file, found at \<archive extracted location\>/Nexys-A7-50T-DMA-Audio/Nexys-A7-50T-DMA-Audio.xpr, included in the extracted release archive in Vivado 2020.1.
 4. In the toolbar at the top of the Vivado window, select **File -> Export -> Export Hardware**. Select **\<Local to Project\>** as the Exported Location and make sure that the **Include bitstream** box is checked, then click **OK**.
 5. In the toolbar at the top of the Vivado window, select **File -> Launch SDK**. Select **\<Local to Project\>** as both the workspace location and exported location, then click **OK**.
 6. With Vivado SDK opened, wait for the hardware platform exported by Vivado to be imported.
