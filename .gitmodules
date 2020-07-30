@@ -1,3 +1,9 @@
 [submodule "digilent-vivado-scripts"]
-	path = digilent-vivado-scripts
-	url = https://github.com/Digilent/digilent-vivado-scripts
+	path = hw/scripts
+	url = https://github.com/Digilent/digilent-vivado-scripts.git
+[submodule "sw/digilent-vitis-scripts"]
+	path = sw/digilent-vitis-scripts
+	url = https://github.com/Digilent/digilent-vitis-scripts.git
+[submodule "hw/digilent-vivado-scripts"]
+	path = hw/digilent-vivado-scripts
+	url = https://github.com/Digilent/digilent-vivado-scripts.git
